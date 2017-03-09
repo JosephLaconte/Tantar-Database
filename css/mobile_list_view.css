@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #EEE;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.tantar_word  {
+    font-size: 200%;
+}
+
+.english_word {
+	font-size: 150%;
+	color: grey;
+}
+
+.van_img {
+	width: 5em;
+	float: left;
+	margin-right: 15px;
+}
+
+.main_view {
+	//display: flex;
+	vertical-align: top;
+}
+
+.side_bar {
+	display: flex;
+	justify-content: space-between;
+    width: 100%;
+    background-color: #69f;
+    height: 65px;
+    box-shadow: 0px 0px 10px #000;
+    color: white;
+    position:fixed;
+}
+
+.side_bar div {
+	margin: auto;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.top_bar_buffer {
+	height: 65px;
+}
+
+.search_bar {
+	height: 60px;
+	background-color: #69f;
+	width: 100%;
+	box-shadow: 0px 0px 10px #000;
+	display: none;
+}
+
+.search_bar input[type='text'] {
+	width: 95%;
+	margin: 2.5%;
+	height: 40px;
+	font-size: 120%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.bar_title {
+	font-size: 280%;
+	font-weight: bold;
+}
+
+.list_view {
+	width: 98%;
+	margin: auto;
+	margin-top: 0px;
+}
+
+.list_view table {
+	width: 100%;
+}
+
+
+.list_view td {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: #FFF;
+	padding: 3px;
+}
+
+.english_word {
+	margin-left: 5px;
+}
+
+.other_translations {
+	max-height: 2.4em;
+	overflow: hidden;
+}
+
+.hovering_circle {
+    background-color: #d33;
+    border-radius: 999em;
+    width: 70px;
+    height: 70px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    line-height: 1;
+    font-size: 36px;
+    position:fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+}
+
+.hovering_circle span {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -22px;
+    color: #FFF;
+}
+
+/*
+.side_bar {
+    width: 16.5%;
+    background-color: #69f;
+    height: 100%;
+    box-shadow: 0px 0px 10px black;
+    color: white;
+}
+
+.side_bar div {
+	//height: 10%;
+	width: 80%;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
