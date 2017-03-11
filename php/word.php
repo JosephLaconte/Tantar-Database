@@ -175,8 +175,7 @@ function add_word($word){
 			$word->is_van,
 			$word->raw_syllables,
 			$word->icon
-		],
-		true
+		]
 	);
 	$word_id = $DB->get_insert_id();
 	if (count($word->raw_translations) > 0) {
@@ -192,8 +191,7 @@ function add_word($word){
 		$DB->query(
 			$translations_query,
 			$var_types,
-			$values,
-			true
+			$values
 		);
 	}
 	$DB->quit();
