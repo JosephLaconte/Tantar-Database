@@ -54,6 +54,7 @@ class Word{
 		$this->id = $word_data['id'];
 		$this->is_van = $word_data['isvan'];
 		$this->description = to_upper_tantar($word_data['description']);
+		$this->icon = (bool)$word_data['icon'];
 		$this->raw_description = $word_data['description'];
 		$this->raw_tantar = $word_data['tantar'];
 		$this->tantar = $word_data['tantar'];
@@ -165,15 +166,17 @@ function add_word($word){
 	require_once("db.php");
 	$DB = new DBC();
 	$DB->query(
-		'INSERT INTO words VALUES(NULL, ?, ?, ?, ?, ?)',
-		'sssis',
+		'INSERT INTO words VALUES(NULL, ?, ?, ?, ?, ?, ?)',
+		'sssisi',
 		[
 			$word->raw_tantar,
 			$word->english,
 			$word->raw_description,
 			$word->is_van,
-			$word->raw_syllables
-		]
+			$word->raw_syllables,
+			$word->icon
+		],
+		true
 	);
 	$word_id = $DB->get_insert_id();
 	if (count($word->raw_translations) > 0) {
@@ -189,7 +192,8 @@ function add_word($word){
 		$DB->query(
 			$translations_query,
 			$var_types,
-			$values
+			$values,
+			true
 		);
 	}
 	$DB->quit();

@@ -11,6 +11,7 @@ function submit_word($POST){
 	$word_data['description'] = $POST["desc"];
 	$word_data['isvan'] = isset($POST["isvan"]) ? 1 : 0;
 	$word_data['syllables'] = isset($POST["syl"]) ? $POST["syl"] : $POST["tantar"];
+	$word_data['icon'] = 0;
 
 	$translations = array();
 

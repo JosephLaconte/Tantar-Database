@@ -33,7 +33,7 @@
 			<tr>
 				<td>
 					<div class="img_container">
-						<img src="van/{{id}}.png" class="van_img"/>
+						<img src="van/{{#icon}}{{id}}{{/icon}}{{^icon}}NONE{{/icon}}.png" class="van_img"/>
 					</div>
 					<div class="text_container">
 						<p class="main_words">

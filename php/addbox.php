@@ -38,7 +38,7 @@
 								<p>Vandrelle</p>
 								<div class="sideBySide">
 									<input type="checkbox" name="isvan" onclick="document.getElementById('vanText').disabled=this.checked;">
-									<input id="vanText" class="text" name="syl" placeholder="syl-la-bles">
+									<input id="vanText" type="text" name="syl" placeholder="syl-la-bles">
 								</div>
 							</div>
 							<div class="infoItem" style="width:100%;">
@@ -57,7 +57,7 @@
 											}
 										?>
 									</select></br>
-									<button type="button" name="addt" onclick="addWords()" >Add</button>
+									<button type="button" name="addt" onclick="addWords()" >ADD</button>
 								</div>
 							</div>
 						</div>
@@ -71,14 +71,12 @@
 							?>
 						</div>
 						<div class="imageOptions">
-							<center>
-								<label class="fileUploadLabel"><input type="file" name="imageFile"/></label>
-								<label class="drawImageButtonLabel"><input type="button" id="openDraw" value="Draw Instead"/></label>
-							</center>
+								<label class="fileUploadLabel"><input class = "hideInput" type="file" name="imageFile"/><p>UPLOAD</p></label>
+								<label class="drawImageButtonLabel"><button class="hideInput" id="openDraw">Draw Instead</button><p>DRAW</p></label>
 						</div>
 					</div>
 					<div class="addBoxFooter">
-						<center><button name="AddSubmitButton">Submit</button></center>
+						<center><button name="AddSubmitButton" class="submit">Submit</button></center>
 					</div>
 				</form>
 			</div>

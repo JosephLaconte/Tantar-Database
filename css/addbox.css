@@ -13,6 +13,75 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+input[type="text"], select{
+    font-size: 120%;
+    border-width: 0 0 1px 0;
+    border-color: grey;
+    border-style: solid;
+    background-color: white;
+}
+
+select {
+    color: grey;
+}
+
+.submit {
+    color: white; 
+    background-color: #E67;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+    padding: 10px 10px 10px 10px;
+    font-size: 120%;
+}
+
+textarea {
+    font-size: 120%;
+    border-width: 0 0 1px 1px;
+    border-color: grey;
+    border-style: solid;
+}
+
+label {
+    width: 30%;
+    margin: auto;
+    height: 2em;
+    color: grey;
+    padding-top: 5px;
+    text-align: center;
+    background-color: lightgrey;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+button {
+    border-width: 0px;
+    height: 2em;
+    color: grey;
+    padding-top: 5px;
+    text-align: center;
+    background-color: lightgrey;
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.2),0 -1px 1px 0 rgba(0,0,0,0.19);
+}
+
+label:active, button:active {
+    background-color: grey;
+    color: darkgrey;
+}
+
+.hideInput {
+    width: 0.1px;
+    padding: 0;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.imageOptions {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+}
+
 .addBoxContent {
     position: relative;
     background-color: #fefefe;
@@ -136,5 +205,5 @@ form {
 .addbox p {
     margin:5px;
     font-size: 120%;
-    margin-left: -5px;
+    //margin-left: -5px;
 }
